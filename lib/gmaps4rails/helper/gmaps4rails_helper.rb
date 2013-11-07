@@ -4,7 +4,7 @@ module Gmaps4railsHelper
   # @params [String] builder is a json string
   def gmaps4rails(builder)
     options = {
-      :map_options => { :auto_adjust => false, :zoom => 5},
+      :map_options => { :auto_adjust => true, :zoom => 5},
       :markers     => { :data => builder, :options => {:do_clustering => true} }
     }
     gmaps(options)
